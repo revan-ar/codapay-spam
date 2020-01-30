@@ -21,6 +21,10 @@ if(cek != '--target'){
 		}else{
 			var price = "1467";
 		}
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 4832d8ff07fdbe537d2dabab76a6711be162a9f7
 		var intro = exec('php intro.php');
 			
 		console.log(intro);
