@@ -19,7 +19,7 @@ if(cek != '--target'){
 		}else{
 			var price = "1467";
 		}
-		console.log(subtarget);
+		
 		var intro = exec('php intro.php');
 			
 		console.log(intro);
