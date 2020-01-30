@@ -6,6 +6,8 @@ var cek = process.argv[2];
 var target = process.argv[3];
 var jumlah = process.argv[4];
 
+
+
 if(cek != '--target'){
 	console.log(cek + " unknown");
 	}else{
@@ -19,7 +21,6 @@ if(cek != '--target'){
 		}else{
 			var price = "1467";
 		}
-		console.log(subtarget);
 		var intro = exec('php intro.php');
 			
 		console.log(intro);
