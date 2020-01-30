@@ -1,0 +1,1 @@
+<?= str_shuffle('123456abHcvyTyjJkL'); ?>

@@ -23,6 +23,7 @@ if(cek != '--target'){
 		}
 
 		var intro = exec('php intro.php');
+		var rand = exec('php rand.php');
 			
 		console.log(intro);
 		console.log("Target : " + target);
@@ -38,7 +39,7 @@ if(cek != '--target'){
 						'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
 						'Content-Type': 'application/x-www-form-urlencoded'
 					},
-					body: "voucherPricePoint.id=" + price + "&voucherPricePoint.price=60000&voucherPricePoint.variablePrice=0&email=xxxjpg@gmail.com&n=1/30/2020-70&userVariablePrice=0&order.data.profile=eyJuYW1lIjoiIiwiaWRfbm8iOiIifQ==&user.userId=102675872&user.zoneId=3115&voucherTypeName=MOBILE_LEGENDS&affiliateTrackingId="
+					body: "voucherPricePoint.id=" + price + "&voucherPricePoint.price=60000&voucherPricePoint.variablePrice=0&email=" + rand + "@gmail.com&n=1/30/2020-70&userVariablePrice=0&order.data.profile=eyJuYW1lIjoiIiwiaWRfbm8iOiIifQ==&user.userId=102675872&user.zoneId=3115&voucherTypeName=MOBILE_LEGENDS&affiliateTrackingId="
 					})
 				.then(res => res.json())
 				.then(respon => {
